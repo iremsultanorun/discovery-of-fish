@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 10px;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #193456;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #80EAE4;
+}
+
+body {
+   
+    background: linear-gradient(90deg, #637DE8, #80EAE4);
+}
+
+.containerOne {
+    height: 100dvh;
+    background-image: url(img/arka\ plan.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.line {
+   position: absolute;
+    top: 64.5%;
+    left: 67.7%;
+    width: 2px;
+    height: 0px;
+    background-color: rgb(1, 42, 90);
+    transition: height 0.2s;
+
+}
+
+.btnbig {
+    margin: 400px 0 0 40%;
+    width: 20rem;
+    height: 5rem;
+    position: relative;
+    font-family: 'Rubik Moonrocks', sans-serif;
+  
+
+}
+
+
+.boat{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: rotate(-10deg);
+    width: 35rem;
+    height: 35rem;
+    float: right;
+
+}
+
+div .card{
+    width: 40rem;
+    transform: translateX(200%); 
+     transition: transform 1s ease; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+div .card:nth-last-of-type(even){
+    transform: translateX(200%);
+
+} 
+.card:nth-last-of-type(odd){
+    transform: translateX(200%);
+
+}
+
+
+.card.show{
+    transform: translateX(0);
+}
+
+.card-top{
+    margin-top: 10rem ;
+}
+
+.content{
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+
+}
+
+.btnsmall{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 800;
+}
+.fish{
+    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.699));
+}
+
+.card-bottom{
+    display: none;
+    transition: display 0.5s;   
+}
+
+
+
+footer{
+    width: 100%;
+    height:100px;
+    background: #193456;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: 80px;
+}
+
+.card-title{
+    font-family: 'Luckiest Guy', cursive;
+    color: #122f52d0;
+}
+
+.card-text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 1115px) {
+    .btnbig{
+        margin-left: 20%;
+
+    }
+    
+
+}
+
+@media screen and (max-width: 792px) {
+    .btnbig{
+        margin-top: 500px;
+        margin-left: 40%;
+        z-index: 2;
+    }
+    .boat{
+        right: 60%;
+    }
+    
+}
+
+@media screen and (max-width: 656px) {
+    .btnbig{
+      
+        margin-left: 30%;
+        z-index: 2;
+    }
+    .boat{
+       left: 50%;
+    }
+  
+    
+}
+@media screen and (max-width: 448px) {
+    .btnbig{
+      
+        margin-left: 20%;
+        z-index: 2;
+    }
+}
+
+
